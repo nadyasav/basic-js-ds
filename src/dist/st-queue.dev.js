@@ -7,10 +7,8 @@ function _defineProperties(target, props) { for (var i = 0; i < props.length; i+
 function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
 
 var _require = require('../extensions/index.js'),
-    NotImplementedError = _require.NotImplementedError;
+    NotImplementedError = _require.NotImplementedError; // const { ListNode } = require('../extensions/list-node.js');
 
-var _require2 = require('../extensions/list-node.js'),
-    ListNode = _require2.ListNode;
 /**
  * Implement the Queue with a given interface via linked list (use ListNode extension above).
  *
@@ -29,8 +27,6 @@ module.exports =
 function () {
   function Queue() {
     _classCallCheck(this, Queue);
-
-    this.queue = [];
   }
 
   _createClass(Queue, [{
@@ -40,17 +36,15 @@ function () {
     }
   }, {
     key: "enqueue",
-    value: function enqueue(value) {
-      //throw new NotImplementedError('Not implemented');
-      // remove line with error and write your code here
-      this.queue.push(value);
+    value: function enqueue()
+    /* value */
+    {
+      throw new NotImplementedError('Not implemented'); // remove line with error and write your code here
     }
   }, {
     key: "dequeue",
     value: function dequeue() {
-      //throw new NotImplementedError('Not implemented');
-      // remove line with error and write your code here
-      return this.queue.shift();
+      throw new NotImplementedError('Not implemented'); // remove line with error and write your code here
     }
   }]);
 
